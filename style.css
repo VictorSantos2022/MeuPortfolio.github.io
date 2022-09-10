@@ -59,7 +59,7 @@
     color: white;
     font-size: 20px;
     font-weight: 500;
-    margin-left: 25px;
+    margin-left: 20px;
     transition: color 0.4s ease;
 }
 
@@ -275,11 +275,11 @@ section{
 
 @media (max-width: 607px){
     .home .home-content .text-2{
-        font-size: 10px;
+        font-size: 45px;
         
     }
     .home .home-content .text-3{
-        font-size: 7px;
+        font-size: 30px;
         
     }
 }
