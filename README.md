@@ -1,2 +1,2 @@
-#  https://victorsantos2022.github.io/MeuPortfolio.github.io/
+#  git push
 Um projetinho de portfolio falando sobre mim.
