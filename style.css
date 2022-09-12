@@ -131,22 +131,12 @@
     cursor: pointer;
     display: none;
 }
-/* ****sessão sobre** */
+
+/* ****todos os codigos similares** */
 section{
     padding: 100px 0;
 }
-.about{
-    font-family: 'Roboto' sans-serif;
-    
-}
-.about .about-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.about .title{
+section .title{
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     font-size: 30px;
@@ -155,7 +145,7 @@ section{
     padding-bottom: 20px;
     position: relative;
 }
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: -2px;
@@ -165,8 +155,7 @@ section{
     background: #000000;
     transform: translateX(-50%);
 }
-.about .title::after{
-    content: "Quem sou eu";
+section .title::after{
     position: absolute;
     bottom: -2px;
     left: 50%;
@@ -176,6 +165,25 @@ section{
     color: #72b2e4;
     padding: 10px;
     transform: translateX(-50%);
+}
+
+
+/* ****sessão sobre ***** */
+
+.about, .services{
+    font-family: 'Roboto', sans-serif;
+    
+}
+.about .about-content, .services .serv-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.about .title::after{
+    content: 'Quem sou ';
 }
 .about .about-content .left{
     width: 20%;
@@ -205,7 +213,7 @@ section{
     border-radius: 10px;
     margin-top: 30px;
     border: 2px solid #72b2e4;
-    font-family: 'ubuntu';
+    font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 
 
@@ -228,6 +236,17 @@ section{
     border-radius: 15px;
 }
 
+/* ****sessão serviços** */
+
+.services{
+    background: #000000;
+    color: #ffffff;
+}
+
+.services .title::after{
+    background: #000000;
+    content: 'Que posso oferecer';
+}
 
 /* responsividade */
 @media (max-width: 1300px){
