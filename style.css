@@ -147,7 +147,7 @@ section{
 }
 
 .about .title{
-    font-family: 'Ubuntu' sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     text-align: center;
     font-size: 30px;
     font-weight: 500;
@@ -200,13 +200,19 @@ section{
     background: #72b2e4;
     color: #ffffff;
     font-size: 20px;
+    font-weight: 500;
     padding: 10px  20px ;
     border-radius: 10px;
     margin-top: 105px;
-    border: 2px solid rgb(7, 118, 161);
+    border: 2px solid #72b2e4;
     font-family: 'ubuntu';
+    transition: all 0.3s ease;
 
 
+}
+.about .about-content .right a:hover{
+    color: #72b2e4;
+    background: none;
 }
 .about .about-content .right .text span{
 
