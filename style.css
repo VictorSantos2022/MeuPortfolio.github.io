@@ -295,6 +295,9 @@ section .title::after{
 }
 
 /* sessão especialidades */
+.skills {
+    background: url(image/fundo.png) no-repeat center;
+}
 .skills .title::after{
     content: 'Que faço';
 }
