@@ -255,11 +255,16 @@ section .title::after{
 
 .services .serv-content .card{
     width: calc(33% - 20px);
-    background: #72b2e4;
+    background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
     cursor: pointer;
+}
+
+.services .serv-content .card ion-icon{
+    font-size: 50px ;
+    color: #72b2e4;
 }
 
 /* responsividade */
