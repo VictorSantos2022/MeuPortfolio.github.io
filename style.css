@@ -167,7 +167,7 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-.about, .services, .skills{
+.about, .services, .skills, .teams{
     font-family: 'Roboto', sans-serif;
     
 }
@@ -240,17 +240,19 @@ section .title::after{
 
 /* ****sessão serviços** */
 
-.services{
+.services, .teams{
     background: #000000;
     color: #ffffff;
 }
 
-.services .title::before{
+.services .title::before,
+.teams .title::before{
     background: #ffffff;
     
 }
 
-.services .title::after{
+.services .title::after,
+.teams .title::after{
     background: #000000;
     content: 'Que ofereço';
 }
@@ -377,6 +379,39 @@ section .title::after{
 .skills .skills-content .right .sql::before{
     width: 45%;
 }
+/* Sessão hobbies */
+.teams .title::after{
+    content: "Hobbies";
+}
+
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+}
+
+.teams .carousel .card img{
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    
+    border: 2px solid;
+    
+}
+.teams .carousel .card video{
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    
+    border: 2px solid;
+}
+
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 /* responsividade */
 @media (max-width: 1300px){
@@ -387,13 +422,14 @@ section .title::after{
     .about .about-content .left{
         display: flex;
         justify-content: center;
-        margin:  50px 100px;
+        margin: 80px 50px;
     }
     .about .about-content .left img{
-        width: 350px;
-        height: 350px;
+        width: 400px;
+        height:400px;
         object-fit: cover;
     border-radius: 15px;
+    width: auto;
         
     }
 }
@@ -401,9 +437,9 @@ section .title::after{
 
 @media (max-width: 1104px){
     .about .about-content .left img{
-        width: 400px;
+        width: 350px;
         height: 350px;
-        object-fit: cover;
+        
     border-radius: 15px;
     }
    
